@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>"SafeYoga"</title>
+  <!--this iline is just to help the browser understand how to behave for responsiveness - still I need to use @media commands -->
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <!-- first links is to an icon database and the last one to bootstrap library-->
+  <script src="https://kit.fontawesome.com/52323c0682.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="Project0Styles.css" type="text/css">
+
+</head>
+
+<body>
+    <div id="mycontentnavbar">
+      <div>
+        <a href="PageHome.html">
+          <div class="fa fa-chevron-left" id="myreturnicons"></div>
+        </a>
+        <img src="yoga-posture.svg">
+        <h2>Please choose if you are a:</h2>
+        <p> <button type="button" class="myactivebutton" onclick="window.location.href = 'PagePricingTeacher.html';">TEACHER</button></p>
+        <p> <button type="button" class="myactivebutton" onclick="window.location.href = 'PagePricingPractitioner.html';">PRACTITIONER</button></p>
+        <p> <button type="button" class="myinactivebutton" onclick="window.location.href = '#';">YOGA STUDIO</button></p>
+      </div>
+    </div>
+      <div class="navbarregular">
+            <!--fa fa is followed by the name of the icon in fontawesome the link is above and the fw is for equal width y href="#" means it links to nothing-->
+            <a href="PageHome.html" id="myactivebtnicons"><i class="fa fa-home"></i> Home</a>
+            <a href="#" id="myinactivebtnicons"> <i class="fa fa-child fa-fw"></i> Saved</a>
+            <a href="#"id="myinactivebtnicons"><i class="fa fa-user-plus fa-fw"></i> Create</a>
+            <a href="#" id="myinactivebtnicons"><i class="fa fa-user-cog fa-fw"></i> Settings</a>
+      </div>
+</body>
+</html>

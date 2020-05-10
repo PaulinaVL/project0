@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>"SafeYoga"</title>
+  <!--this iline is just to help the browser understand how to behave for responsiveness - still I need to use @media commands -->
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <!-- remember to always put the bootstrap or any library above my stylesheet so that my stylesheet is dominant - first links is to mycss stylesheet and the last one to bootstrap library-->
+  <script src="https://kit.fontawesome.com/52323c0682.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="Project0Styles.css" type="text/css">
+
+</head>
+
+<body>
+  <div id="mycontentnavbar";>
+    <a href="PageHome.html">
+      <div class="fa fa-chevron-left" id="myreturnicons"></div>
+    </a>
+    <img src="yoga-posture.svg">
+    <form> <!--action="/action_page.php"-->
+
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd">
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+
+      <button type="submit" class="myactivebutton" onclick="window.location.href = 'PageHome.html';">Submit</button>
+    </form>
+  </div>
+  <div class="navbarregular">
+        <!--fa fa is followed by the name of the icon in fontawesome the link is above and the fw is for equal width y href="#" means it links to nothing-->
+        <a href="PageHome.html" id="myactivebtnicons"><i class="fa fa-home"></i> Home</a>
+        <a href="#" id="myinactivebtnicons"> <i class="fa fa-child fa-fw"></i> Saved</a>
+        <a href="#"id="myinactivebtnicons"><i class="fa fa-user-plus fa-fw"></i> Create</a>
+        <a href="#" id="myinactivebtnicons"><i class="fa fa-user-cog fa-fw"></i> Settings</a>
+  </div>
+</body>
+</html>
